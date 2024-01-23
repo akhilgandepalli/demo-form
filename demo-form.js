@@ -31,13 +31,14 @@ const validate = (id,val,msg) => {
             error[2].innerHTML='';
             id.style.border='2px solid green';
         }else{
-            error[2].innerHTML='Password length must be 4 to 10';
+            error[2].innerHTML='Password length must be 5 to 12';
             id.style.border='2px solid red';
         }
     // else no error
     }else{
         error[val].innerHTML='';
         id.style.border='2px solid green';
+        console.log(uname.value,email.value,pass.value)
     }
 }
 
